@@ -19,7 +19,15 @@ add_action('wp_print_styles', 'fooDog_google_fonts');
 // WordPress Titles
 add_theme_support( 'title-tag' );
 
-// Custom settings
+// Support Featured Images
+add_theme_support( 'post-thumbnails' );
+
+//\ Custom settings begin
+
+/*
+Don't forget to update target links in sidebar with
+<?php echo get_option('$target'); ?>
+*/
 
 // Add custom settings in the dashboard menu
 function custom_settings_add_menu() {
@@ -27,7 +35,7 @@ function custom_settings_add_menu() {
 }
 add_action( 'admin_menu', 'custom_settings_add_menu' );
 
-// Create Custom Global Settings
+// Create Custom Global Settings page
 function custom_settings_page() { ?>
 	<div class="wrap">
 		<h1>Custom Settings</h1>
@@ -40,6 +48,8 @@ function custom_settings_page() { ?>
 		</form>
 	</div>
 <?php }
+
+//\ Input fields
 
 // Twitter
 function setting_twitter() { ?>
@@ -56,6 +66,8 @@ function setting_facebook() { ?>
 	<input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>" />
 <?php }
 
+// set up the page to show, accept and save the option fields
+
 function custom_settings_page_setup() {
 	add_settings_section( 'section', 'All Settings', null, 'theme-options' );
 
@@ -68,3 +80,5 @@ function custom_settings_page_setup() {
   register_setting( 'section', 'github' );
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
+
+//\ Custom settings end
