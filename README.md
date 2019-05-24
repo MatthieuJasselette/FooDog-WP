@@ -16,9 +16,7 @@ This project uses wordpress, xampp and bootstrap.
 
 ## Installation (if applicable)
 
-Details of process to install / setup dev environment for the project, if applicable.
-
-Install lampp, for instance with xampp.
+Install lampp, for instance with [xampp](https://www.apachefriends.org/download.html).
 
 Clone this repo the htdocs folder of your lampp installation.
 

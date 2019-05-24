@@ -25,7 +25,7 @@
       <nav class="blog-nav">
         <a class="blog-nav-item active" href="/FooDog-WP">HOME</a>
         <?php wp_list_pages ('&title_li='); ?>
-        
+
       </nav>
     </div>
   </div>
