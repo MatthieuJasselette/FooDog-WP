@@ -18,11 +18,11 @@ This project uses wordpress, xampp and bootstrap.
 
 Install lampp, for instance with [xampp](https://www.apachefriends.org/download.html).
 
-Clone this repo the htdocs folder of your lampp installation.
+Clone this repo in the htdocs folder of your lampp installation.
 
-Use `opt/lampp/lampp start` to run your site.
+Use `/opt/lampp/lampp start` to run your site.
 
-Use `opt/lampp/lampp stop` to shut down your site.
+Use `/opt/lampp/lampp stop` to shut down your site.
 
 In your database administration tool, import the *.sql* file in the db folder.
 
