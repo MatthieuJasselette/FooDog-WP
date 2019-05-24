@@ -4,19 +4,35 @@
 
 * * *
 
-A short abstract of the project, goals, context… Anything that should be useful for a future reader.
+This is a small wordpress site about dog food.
 
 ## About
 
-A more detailed description of the project, with technical details: used langages and techs, context, etc.
+This wordpress site is an exercise unertaken during the becode formation.
+The point was to recreate a UI using the wordpress theme functionality.
+Most of it is based on the excellent tutorial from user taniarascia : [Developing a Wordpress Theme from Scratch](https://www.taniarascia.com/developing-a-wordpress-theme-from-scratch/)
+
+This project uses wordpress, xampp and bootstrap.
 
 ## Installation (if applicable)
 
 Details of process to install / setup dev environment for the project, if applicable.
 
+Install lampp, for instance with xampp.
+
+Clone this repo the htdocs folder of your lampp installation.
+
+Use `opt/lampp/lampp start` to run your site.
+
+Use `opt/lampp/lampp stop` to shut down your site.
+
+In your database administration tool, import the *.sql* file in the db folder.
+
+To edit the theme, tinker with the files found in */wp-content/themes/FooDog*.
+
 ## Usage (if applicable)
 
-How to use the project, if applicable
+This site is supposed to be used to learn and test the wordpress theme functionality.
 
 * * *
 

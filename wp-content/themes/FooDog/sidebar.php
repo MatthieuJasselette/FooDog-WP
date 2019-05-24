@@ -19,5 +19,12 @@
       <li><a href="<?php echo get_option('facebook'); ?>">Facebook</a></li>
     </ol>
   </div>
+  <div>
+    <?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
+      <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+        <?php dynamic_sidebar( 'home_right_1' ); ?>
+      </div><!-- #primary-sidebar -->
+    <?php endif; ?>
+  </div>
 </div>
 <!-- /.blog-sidebar -->

@@ -5,7 +5,6 @@ function fooDog_scripts() {
 	wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/blog.css' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.3.6', true );
 }
-
 add_action( 'wp_enqueue_scripts', 'fooDog_scripts' );
 
 // Add Google Fonts
@@ -13,7 +12,6 @@ function fooDog_google_fonts() {
 	wp_register_style('OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 	wp_enqueue_style( 'OpenSans');
 }
-
 add_action('wp_print_styles', 'fooDog_google_fonts');
 
 // WordPress Titles
@@ -82,3 +80,34 @@ function custom_settings_page_setup() {
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
 //\ Custom settings end
+
+
+//\ Register our sidebars and widgetized areas.
+
+/*
+Don't forget to call the widgets in sidebar with
+<?php dynamic_sidebar( 'home_right_1' ); ?>
+*/
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home right sidebar',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'other sidebar',
+		'id'            => 'other_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
