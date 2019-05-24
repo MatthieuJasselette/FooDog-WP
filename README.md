@@ -14,7 +14,7 @@ Most of it is based on the excellent tutorial from user taniarascia : [Developin
 
 This project uses wordpress, xampp and bootstrap.
 
-## Installation (if applicable)
+## Installation
 
 Install lampp, for instance with [xampp](https://www.apachefriends.org/download.html).
 
@@ -28,7 +28,7 @@ In your database administration tool, import the *.sql* file in the db folder.
 
 To edit the theme, tinker with the files found in */wp-content/themes/FooDog*.
 
-## Usage (if applicable)
+## Usage
 
 This site is supposed to be used to learn and test the wordpress theme functionality.
 
